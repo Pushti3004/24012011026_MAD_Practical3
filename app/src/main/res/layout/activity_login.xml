@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/Guni"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/guni_pink_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <com.google.android.material.card.MaterialCardView
+
+        android:layout_width="380dp"
+        android:layout_height="280dp"
+        app:cardBackgroundColor="#383442"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Guni">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/EmailID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:text="Email Id"
+            android:textColor="#D6D1DD"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/emailid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:layout_marginStart="20dp"
+            android:textColor="#D6D1DD"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@id/EmailID"
+            app:layout_constraintTop_toTopOf="@id/EmailID"
+            app:layout_constraintBottom_toBottomOf="@id/EmailID">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_marginTop="30dp"
+            android:textColor="#D6D1DD"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@id/EmailID"
+            app:layout_constraintTop_toBottomOf="@id/EmailID">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberPassword"
+            android:textColor="#D6D1DD"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@id/Password"
+            app:layout_constraintBottom_toBottomOf="@id/Password"
+            app:layout_constraintTop_toTopOf="@id/Password">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/ForgotPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:layout_marginTop="30dp"
+            android:textColor="#D6D1DD"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@id/Password"
+            app:layout_constraintTop_toBottomOf="@id/Password">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btn_Browse"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#C9B2FF"
+            android:text="Login"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@id/password"
+            app:layout_constraintTop_toBottomOf="@id/ForgotPass">
+
+        </Button>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
